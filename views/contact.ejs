@@ -1,0 +1,24 @@
+<%- include ('partials/header') %>
+
+    <div class="FormWrapper">
+        <form action="mailto:gordonvlasic@gmail.com?subject=Contact Gordon" method="post" enctype="text/plain" name="EmailForm">
+            <div class="formInputs">
+                <h3>First Name</h3><input type="text" name="fname" class="formy">
+                <h3>Last Name</h3><input type="text" name="lname" class="formy">
+                <h3>Contact Number</h3><input type="tel" name="phone number" class="formy">
+                <h3>Email Address</h3><input type="email" name="email" class="formy">
+                <h3>Message</h3><textarea cols="25" rows="4" name="message" class="formy"></textarea>
+                <br><br>
+                <a class="b three">
+                    <button class="formbutton">Submit</button>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+
+                </a>
+            </div>
+        </form>
+    </div>
+
+  <%- include ('partials/footer') %>
