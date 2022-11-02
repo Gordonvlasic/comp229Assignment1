@@ -11,7 +11,11 @@ October 2, 2022
 */
 
 
-
+.container.u {
+  position: absolute;
+    top: 250px;
+    right: 50rem;
+}
 
 
 
@@ -19,6 +23,11 @@ October 2, 2022
 *{
   font-family: 'Raleway', sans-serif;
     font-weight: bold;
+    color: white;
+
+}
+input{
+  color: black;
 }
 
 body{

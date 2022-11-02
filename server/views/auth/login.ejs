@@ -1,0 +1,36 @@
+<%- include ('../partials/header') %>
+<main class="container">
+
+    <!-- Message Section -->
+    <% if(messages.length > 0) {%>
+        <div>
+            <%= messages %>
+        </div>
+    <% } %>
+
+    <div>
+        <div>
+            <form class="login-form" method="POST" autocomplete="off">
+                <h1 class="login">Login</h1><br>
+
+                    <label class="required-field" for="username" style="text-align: center">Username</label>
+                    <input type="text" 
+                    name="username" placeholder="Enter your username"
+                    id="username" required autofocus><br><br>
+
+                    <label class="required-field" for="password" style="text-align: center">Password</label>
+                    <input type="password"
+                    name="password" placeholder="Enter your password"
+                    id="password" required><br><br><br>
+                    <input class="button" type="submit" style="margin-left: 100px" value="Login">
+                    <a href="/">
+                        <input class="button" type="button" style="margin-left: 10px" value="Cancel">
+                    </a><br><br>
+                    <a href="/register" class="register">REGISTER</a>
+            </form>
+        </div>
+    </div>
+
+</main>
+
+<%- include ('../partials/footer') %>

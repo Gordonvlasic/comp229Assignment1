@@ -1,0 +1,60 @@
+<%- include ('../partials/header') %>
+
+<main class="container">
+
+    <!-- Message Section -->
+    <% if(messages.length > 0) {%>
+        <div class="alert alert-danger">
+            <%= messages %>
+        </div>
+    <% } %>
+
+    <div class="row">
+        <div>
+            <form class="register-form" method="POST" autocomplete="off">
+                <h1 class="register-here">Register Here</h1>
+                    <label class="required-field" for="username" style="text-align: center; margin-top: 30px">Username</label>
+                    <input type="text" 
+                    name="username" placeholder="Enter your username"
+                    id="username" required autofocus>
+
+                    <label class="required-field" for="email" style="text-align: center">Email</label>
+                    <input type="email" 
+                    name="email" placeholder="Enter your email"
+                    id="email" required>
+                    <div>
+                        <label class="required-field" for="nameTextField" style="text-align: center">Contact Name:</label>
+                        <input type="text" 
+                        id="nameTextField"
+                        name="name" required>
+                    </div>
+        
+                    <div>
+                        <label class="required-field" for="numberTextField" style="text-align: center">Contact Number:</label>
+                        <input type="text" 
+                        id="numberTextField"
+                        name="number" required>
+                    </div>
+                    
+                
+                    <label class="required-field" for="displayName" style="text-align: center">Display Name</label>
+                    <input type="text" 
+                    name="displayName" placeholder="Enter display name"
+                    id="displayName" required>
+
+                    <label class="required-field" for="password" style="text-align: center">Password</label>
+                    <input type="password" style="margin-bottom: 7px"
+                    name="password" placeholder="Enter your password"
+                    id="password" required><br><br>
+
+                    <input type="submit" class="button" style="margin-left: 95px" value="Register">
+                    <a href="/">
+                        <input type="button" class="button" style="margin-left: 10px" value="Cancel">
+                    </a>
+            </form>
+        </div>
+    </div>
+
+</main>
+
+<%- include ('../partials/footer') %>
